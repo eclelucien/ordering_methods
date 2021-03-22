@@ -102,24 +102,29 @@ int main(){
   ordemDecrescente(vet2, tam1);
   ordemAleatorio(vet3, tam1);
 
+  //Gerando 3 vetores de tamanho 50000
   ordemCrescente(vet4, tam2);
   ordemDecrescente(vet5, tam2);
   ordemAleatorio(vet6, tam2);
 
+  //Gerando 3 vetores de tamanho 100000
   ordemCrescente(vet7, tam3);
   ordemDecrescente(vet8, tam3);
   ordemAleatorio(vet9, tam3);
 
+  //Ordenando os 3 vetores de tamanho 10000, com o tempo de execução
   insertionSort(vet1, tam1);
   insertionSort(vet2, tam1);
   insertionSort(vet3, tam1);
   printf("\n");
 
+  //Ordenando os 3 vetores de tamanho 50000, com o tempo de execução
   insertionSort(vet4, tam2);
   insertionSort(vet5, tam2);
   insertionSort(vet6, tam2);
   printf("\n");
 
+  //Ordenando os 3 vetores de tamanho 100000, com o tempo de execução
   insertionSort(vet7, tam3);
   insertionSort(vet8, tam3);
   insertionSort(vet9, tam3);

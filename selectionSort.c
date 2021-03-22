@@ -3,9 +3,9 @@
 #include <time.h>
 #include <stdbool.h>
 
-#define tam1 20
-#define tam2 50
-#define tam3 30
+#define tam1 10000
+#define tam2 50000
+#define tam3 100000
 
 void selectionSort(int *vet, int n){
   clock_t start, end;
@@ -36,6 +36,7 @@ void selectionSort(int *vet, int n){
 
   printf("\n\n\n\t -> Tempo em s: %lf, Tempo em ms: %lf", difTempo, difTempo * 1000);
 }
+
 
 void ordemCrescente(int vet[], int n){
   int i, j, k;
@@ -109,33 +110,37 @@ int main(){
   ordemDecrescente(vet2, tam1);
   ordemAleatorio(vet3, tam1);
 
+  //Gerando 3 vetores de tamanho 50000
   ordemCrescente(vet4, tam2);
   ordemDecrescente(vet5, tam2);
   ordemAleatorio(vet6, tam2);
 
+  //Gerando 3 vetores de tamanho 100000
   ordemCrescente(vet7, tam3);
   ordemDecrescente(vet8, tam3);
   ordemAleatorio(vet9, tam3);
 
+  
+
+  //Ordenando os 3 vetores de tamanho 10000, com o tempo de execução
   selectionSort(vet1, tam1);
   selectionSort(vet2, tam1);
   selectionSort(vet3, tam1);
   printf("\n");
 
+  //Ordenando os 3 vetores de tamanho 50000, com o tempo de execução
   selectionSort(vet4, tam2);
   selectionSort(vet5, tam2);
   selectionSort(vet6, tam2);
   printf("\n");
 
+  //Ordenando os 3 vetores de tamanho 100000, com o tempo de execução
   selectionSort(vet7, tam3);
   selectionSort(vet8, tam3);
   selectionSort(vet9, tam3);
   printf("\n");
 
-  for (int i = 0; i <tam2; i++){
-    printf("%d\n", vet6[i]);  
-  }
-
+ 
   
 
   
